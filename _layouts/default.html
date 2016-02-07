@@ -14,6 +14,8 @@
 
 		<script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.11.2/moment.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.11.2/locale/fr.js"></script>
 	    <!-- Plugin JavaScript -->
 		<script src="js/jquery.ajaxchimp.min.js"></script>
 	    <script src="js/jquery.easing.min.js"></script>
@@ -23,6 +25,35 @@
 	    <!-- Custom Theme JavaScript -->
 	    <script src="js/creative.js"></script>
 	    <script src="js/bibliotheque.js"></script>
+	    <script>
+	    $(document).ready(function() {
+	        
+	        var token = 'T4COO2MSHPOR323LTGNU';
+	        var events = $("#events");
+	        
+	        $.get('https://www.eventbriteapi.com/v3/events/search/?token='+token+'&organizer.id=8066809138&expand=venue', function(res) {
+	            if(res.events.length) {
+	                for(var i=0;i<res.events.length;i++) {
+	                    var event = res.events[i];
+	                    var item = $('<a />');
+	                    item.attr('href', event.url);
+	                    item.addClass('list-group-item');
+	                    var time = moment(event.start.local).format('dddd D MMMM YYYY à H[h]mm');
+	                    var place = event.venue.name + ' (' + event.venue.address.city + ')';
+	                    item.html(time + ' - ' + place);
+						events.append(item);
+	                }
+	            } else {
+		            var noEvents = $('<a />');
+		            noEvents.addClass('list-group-item disabled');
+		            noEvents.html('Aucun spectacle n\'est prévu pour le moment');
+	                events.append(noEvents);
+	            }
+	        });
+	        
+	        
+	    });
+	    </script>
 	</body>
 
 </html>
