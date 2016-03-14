@@ -31,7 +31,7 @@
 	        var token = 'T4COO2MSHPOR323LTGNU';
 	        var events = $("#events");
 	        
-	        $.get('https://www.eventbriteapi.com/v3/events/search/?token='+token+'&organizer.id=8066809138&expand=venue', function(res) {
+	        $.get('https://www.eventbriteapi.com/v3/events/search/?token='+token+'&organizer.id=8066809138&expand=venue&sort_by=date', function(res) {
 	            if(res.events.length) {
 	                for(var i=0;i<res.events.length;i++) {
 	                    var event = res.events[i];
