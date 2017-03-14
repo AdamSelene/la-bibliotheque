@@ -42,7 +42,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
+    font-family: 'luminariregular','Helvetica Neue',Arial,sans-serif;
 }
 
 p {
@@ -65,7 +65,7 @@ p {
 }
 
 section {
-    padding: 100px 0;
+    padding: 50px 0;
 }
 
 aside {
@@ -196,8 +196,10 @@ header .header-content {
 header .header-content .header-content-inner h1 {
     margin-top: 0;
     margin-bottom: 0;
-    text-transform: uppercase;
+    /*text-transform: uppercase;*/
     font-weight: 700;
+   	font-family: 'luminariregular';
+    text-shadow: 2px 2px 4px black;
 }
 
 header .header-content .header-content-inner hr {
@@ -209,6 +211,8 @@ header .header-content .header-content-inner p {
     font-size: 16px;
     font-weight: 300;
     color: rgba(255,255,255,.7);
+	font-family: 'luminariregular';
+	text-shadow: 2px 2px 4px black;
 }
 
 @media(min-width:768px) {
@@ -473,4 +477,11 @@ img::-moz-selection {
 
 body {
     webkit-tap-highlight-color: #222;
+}
+
+@font-face {
+    font-family: 'luminariregular';
+    src: url('../fonts/luminari-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 }
