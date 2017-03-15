@@ -485,3 +485,8 @@ body {
     font-weight: normal;
     font-style: normal;
 }
+
+footer p {
+	font-size: 14px;
+	margin: 5px 0;
+}

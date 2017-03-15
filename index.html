@@ -19,12 +19,30 @@ name: index
                 <h2 class="section-heading">Un spectacle d'improvisation théâtrale</h2>
                 <hr class="light">
                 <p class="text-faded">Venez avec un livre : un classique, un recueil de poésies, une revue, un dictionnaire, un manuel scolaire, une bande-dessinée, une pièce de théâtre, une lettre d'amour, un mode d'emploi… Quel qu'il soit, il trouvera sa place dans notre bibliothèque et pourra servir d'inspiration pour nos scènes improvisées.</p>
-                <a href="#when" class="btn btn-default btn-xl page-scroll">Prochains spectacles</a>
             </div>
         </div>
     </div>
 </section>
 
+<aside class="bg-dark" id="when">
+    <div class="container text-center">
+        <div class="call-to-action">
+	        <h2>Prochains spectacles</h2>
+			<hr class="light" />
+	        <div id="events" class="list-group"></div>
+	        <hr class="light" />
+	        <p>Retrouvez nos prochaines dates sur <a href="https://www.facebook.com/labibliotheque.impro/events" title="La Bibliothèque sur Facebook">Facebook</a> ou sur <a href="http://la-bibliotheque.eventbrite.fr" title="La Bibliothèque sur Eventbrite">Eventbrite</a></p>
+            <p>Vous pouvez également vous inscrire sur notre liste de diffusion</p>
+            <form class="form-inline" role="form" id="mc-form">
+				<div class="form-group required">
+					<label class="control-label" for="mc-email"></label><br />
+		            <input type="email" size="40" class="form-control" id="mc-email" name="EMAIL" placeholder="Adresse e-mail" />
+					<button type="submit" class="btn btn-default wow tada">S'inscrire</button>
+				</div>
+            </form>
+        </div>
+    </div>
+</aside>
 
 <section class="no-padding" id="galerie">
     <div class="container-fluid">
@@ -48,7 +66,7 @@ name: index
                 <img src="img/galerie/6.jpg" class="img-responsive" alt="">
             </div>
         </div>
-        <div class="row bg-dark">
+        <div class="row bg-dark" style="padding: 15px 0">
 	        <div class="col-lg-8 col-lg-offset-2 text-center">
                 <a href="https://www.facebook.com/labibliotheque.impro/photos" class="btn btn-primary btn-xl">Plus de photos</a>
 	        </div>
@@ -56,44 +74,41 @@ name: index
     </div>
 </section>
 
-<aside class="bg-dark" id="when">
-    <div class="container text-center">
-        <div class="call-to-action">
-	        <h2>Prochains spectacles</h2>
-	        <div id="events" class="list-group"></div>
-	        <hr class="light" />
-	        <p>Retrouvez nos prochaines dates sur <a href="https://www.facebook.com/labibliotheque.impro/events" title="La Bibliothèque sur Facebook">Facebook</a> ou sur <a href="http://la-bibliotheque.eventbrite.fr" title="La Bibliothèque sur Eventbrite">Eventbrite</a></p>
-            <p>Vous pouvez également vous inscrire sur notre liste de diffusion</p>
-            <form class="form-inline" role="form" id="mc-form">
-				<div class="form-group required">
-					<label class="control-label" for="mc-email"></label><br />
-		            <input type="email" size="40" class="form-control" id="mc-email" name="EMAIL" placeholder="Adresse e-mail" />
-					<button type="submit" class="btn btn-default wow tada">S'inscrire</button>
-				</div>
-            </form>
-        </div>
-    </div>
-</aside>
-
 <section id="contact">
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 text-center">
                 <h2 class="section-heading">Contactez-nous !</h2>
                 <hr class="primary">
-                <p>Vous avez des questions sur notre spectacle ? Vous avez une proposition de date à nous faire ? Envoyez-nous un message et nous vous répondrons au plus vite.</p>
+                <p>Des questions sur notre spectacle ? Une proposition de date à nous faire ? Envoyez-nous un message et nous vous répondrons au plus vite.</p>
             </div>
-            <div class="col-lg-4 col-lg-offset-2 text-center">
-				<i class="fa fa-facebook-official fa-3x wow bounceIn"></i>
-				<p><a href="https://www.facebook.com/labibliotheque.impro/" title="La Bibliothèque sur Facebook">Facebook</a></p>
+            <div class="col-lg-2 col-lg-offset-2 text-center">
+				<p><a href="https://www.facebook.com/labibliotheque.impro/" title="La Bibliothèque sur Facebook"><i class="fa fa-facebook-official fa-3x wow bounceIn"></i></a></p>
             </div>
-            <div class="col-lg-4 text-center">
-                <i class="fa fa-envelope-o fa-3x wow bounceIn" data-wow-delay=".1s"></i>
-                <p><a href="mailto:contact@la-bibliotheque.fr">contact@la-bibliotheque.fr</a></p>
+			<div class="col-lg-2 text-center">
+				<p><a href="https://twitter.com/biblioimpro" title="La Bibliothèque sur Twitter"><i class="fa fa-twitter fa-3x wow bounceIn" data-wow-delay=".1s"></i></a></p>
+            </div>
+			<div class="col-lg-2 text-center">
+				<p><a href="https://instragram.com/biblioimpro" title="La Bibliothèque sur Instagram"><i class="fa fa-instagram fa-3x wow bounceIn" data-wow-delay=".2s"></i></a></p>
+            </div>
+
+            <div class="col-lg-2 text-center">
+                <p><a href="mailto:contact@la-bibliotheque.fr" title="Contactez-nous par mail"><i class="fa fa-envelope-o fa-3x wow bounceIn" data-wow-delay=".3s"></i></a></p>
             </div>
         </div>
     </div>
 </section>
 
+<footer id="footer" class="bg-dark">
+    <div class="container">
+		<p>La Bibliothèque 2015-2017 — <em>Tous droits réservés</em></p>
+		<dl>
+			<dt>Photos</dt><dd>Pak-Ming Wan et Nicolas Huang</dd>
+			<dt>Éditeur</dt><dd>Association loi 1901 "Compagnie Falbala" 52 rue Jeanne d'Arc, Paris 13e</dd>
+			<dt>Responsable de la rédaction</dt><dd>Olivier Sambourg</dd>
+			<dt>Hébergeur</dt><dd><a href="http://github.io" title="Github">Github</a></dd>
+		</dl>
+	</div>
+</footer>
 
 
