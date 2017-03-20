@@ -1,11 +1,11 @@
 # La Bibliothèque
 
-Vos livres tels que vous ne les avez jamais lus…
+Vos livres comme vous ne les avez jamais lus…
 
 [homepage]: http://www.la-bibliotheque.fr
 
 <br>
 ---
 
-Copyright (c) 2015 La Bibliothèque 
+Copyright (c) 2015-2017 La Bibliothèque 
 
